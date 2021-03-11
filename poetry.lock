@@ -257,6 +257,21 @@ checkqa-mypy = ["mypy (==v0.761)"]
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
 
 [[package]]
+name = "pytest-cov"
+version = "2.11.1"
+description = "Pytest plugin for measuring coverage."
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.dependencies]
+coverage = ">=5.2.1"
+pytest = ">=4.6"
+
+[package.extras]
+testing = ["fields", "hunter", "process-tests (==2.0.2)", "six", "pytest-xdist", "virtualenv"]
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.1"
 description = "Extensions to the standard Python datetime module"
@@ -407,7 +422,7 @@ python-versions = ">=3.6.1"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c83165baf22b46b371e9e44aab60c9e1f80a47821de01e66e5401653284a1266"
+content-hash = "a65602651b3a957f9b8bf82f705347543a426bb55faaf7dcde4f8b0292859425"
 
 [metadata.files]
 appdirs = [
@@ -596,6 +611,10 @@ pyparsing = [
 pytest = [
     {file = "pytest-5.4.3-py3-none-any.whl", hash = "sha256:5c0db86b698e8f170ba4582a492248919255fcd4c79b1ee64ace34301fb589a1"},
     {file = "pytest-5.4.3.tar.gz", hash = "sha256:7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"},
+]
+pytest-cov = [
+    {file = "pytest-cov-2.11.1.tar.gz", hash = "sha256:359952d9d39b9f822d9d29324483e7ba04a3a17dd7d05aa6beb7ea01e359e5f7"},
+    {file = "pytest_cov-2.11.1-py2.py3-none-any.whl", hash = "sha256:bdb9fdb0b85a7cc825269a4c56b48ccaa5c7e365054b6038772c32ddcdc969da"},
 ]
 python-dateutil = [
     {file = "python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"},
